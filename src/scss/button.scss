@@ -10,6 +10,11 @@
   transform: unset;
   transition: 0.2s linear;
 
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
   &:hover {
     background-color: #fff;
     color: #000;
