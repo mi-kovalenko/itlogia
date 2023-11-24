@@ -1,0 +1,24 @@
+.button {
+  padding: 20px;
+  background-color: var(--orange);
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  box-sizing: border-box;
+  border: 1px solid var(--orange);
+  transform: unset;
+  transition: 0.2s linear;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+  } 
+
+  &:active {
+    color: var(--orange);
+    transform: scale3d(1.2, 1.2, 0.5);
+    transition: 0.2s linear;
+  }
+}

@@ -1,0 +1,90 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.promo__heading {
+  grid-column: 1 / span 2; ;
+  margin: 0;
+  margin-bottom: 70px;
+  font-size: 45px;
+  color: var(--brown);
+  line-height: 1.222;
+
+  span {
+    color: var(--orange);
+  }
+}
+
+.promo__pros {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 60px;
+  margin-right: 65px;
+  margin-bottom: 50px;
+}
+
+.promo__pro {
+  position: relative;
+  padding-left: 80px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+  }
+
+  &--1::after {
+    background-image: url('../img/hop.svg');
+  }
+
+  &--2::after {
+    background-image: url('../img/kitchen-pack.svg');
+  }
+
+  &--3::after {
+    background-image: url('../img/seo-and-web.svg');
+  }
+
+  &--4::after {
+    background-image: url('../img/holidays.svg');
+  }
+
+}
+
+.promo__pro-heading {
+  margin-top: 0;
+  color: var(--orange);
+  text-transform: uppercase;
+}
+
+.promo__pro-desc {
+  margin: 0;
+}
+
+.promo button {
+  margin-top: 30px;
+}
+
+.promo__img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    flex-direction: row;
+  }
+
+  .promo__pros {
+    margin-bottom: 0;
+  }
+}

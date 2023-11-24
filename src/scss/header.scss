@@ -1,0 +1,27 @@
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  margin-right: 250px;
+}
+
+.header__link {
+  padding: 20px;
+  text-decoration: none;
+  color: var(--brown);
+
+  &:hover {
+    color: var(--orange);
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    margin-right: 230px;
+  }
+}
