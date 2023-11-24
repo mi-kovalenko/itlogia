@@ -40,6 +40,11 @@
 .menu__card-desc {
   text-align: center;
   color: #000;
+  height: 65px;
+}
+
+.menu__card-img {
+  height: 140px;
 }
 
 @media (min-width: 768px) {
