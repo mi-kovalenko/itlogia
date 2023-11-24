@@ -78,6 +78,9 @@ function enlargeImg(srcImg) {
     }
 
     // Actually enlarge the image
+    var container = id("enlarged-image").parentNode;
+    container.style.display = 'block'; 
+    
     var large_src = srcImg.getAttribute("data-large-src") || srcImg.src;
     displayImg(large_src);
     id("enlarged-image").parentNode.classList.add("open");
@@ -86,6 +89,9 @@ function enlargeImg(srcImg) {
 function unenlargeImg() {
     // Close
     id("enlarged-image").parentNode.classList.remove("open");
+    var container = id("enlarged-image").parentNode;
+    container.classList.remove("open");
+    container.style.display = 'none';
 }
 
 function nextImage() {
