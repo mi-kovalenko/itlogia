@@ -22,10 +22,8 @@ form.addEventListener('submit', function(e) {
 
   xhr.onload = function() {
     if (xhr.status === 200) {
-      // Отображаем модальное окно
       modal.classList.add('modal--open');
     } else {
-      // Обработка ошибок
       console.error("Ошибка отправки формы");
     }
   };
