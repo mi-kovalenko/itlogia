@@ -9,11 +9,8 @@
   border: 1px solid var(--orange);
   transform: unset;
   transition: 0.2s linear;
-
-  a {
-    color: #000;
-    text-decoration: none;
-  }
+  text-align: center;
+  text-decoration: none;
 
   &:hover {
     background-color: #fff;
