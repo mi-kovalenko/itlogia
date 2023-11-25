@@ -1,13 +1,14 @@
 .header__wrapper {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .header__logo {
-  margin-right: 250px;
+  margin-bottom: 20px;
 }
 
 .header__link {
@@ -20,8 +21,26 @@
   }
 }
 
+header nav {
+  display: flex;
+  flex-direction: column;
+}
+
+
 @media (min-width: 1200px) {
-  nav {
-    margin-right: 230px;
+
+  .header__wrapper {
+    flex-direction: row;
+  }
+
+  .header__logo {
+    margin-right: 250px;
+    margin-bottom: 0px;
+  }
+
+  header nav {
+    margin-right: 230px;    
+    flex-direction: row;
+
   }
 }

@@ -45,6 +45,7 @@
 .order__img {
   width: 50%;
   object-fit: contain;
+  margin: 0 auto;
   margin-top: 30px;
 }
 
@@ -53,11 +54,24 @@
   .order {
     flex-direction: row;
     align-items: start;
+    flex-wrap: wrap;
   }
 
   .order__header {
     margin-right: 125px;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .order {
+    flex-wrap: nowrap;
+  }
+
+  .order__img {
+    width: 30%;
+    position: relative;
+    bottom: 20px;  
   }
 
   .order__form {
@@ -66,11 +80,5 @@
     input {
       width: 330px;
     }
-  }
-
-  .order__img {
-    width: 30%;
-    position: relative;
-    bottom: 20px;  
   }
 }
