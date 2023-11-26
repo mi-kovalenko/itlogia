@@ -1,12 +1,11 @@
-@import 'src/scss/mixins';
-@import 'src/scss/lightbox';
-@import 'src/scss/header';
-@import 'src/scss/button';
-@import 'src/scss/fonts';
-@import 'src/scss/order';
-@import 'src/scss/menu';
-@import 'src/scss/promo';
-@import 'src/scss/modal';
+@import url('src/scss/lightbox.scss');
+@import url('src/scss/header.scss');
+@import url('src/scss/button.scss');
+@import url('src/scss/fonts.scss');
+@import url('src/scss/order.scss');
+@import url('src/scss/menu.scss');
+@import url('src/scss/promo.scss');
+@import url('src/scss/modal.scss');
 
 :root {
   --orange: #ffaf18;
