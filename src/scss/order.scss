@@ -49,8 +49,7 @@
   margin-top: 30px;
 }
 
-@media (min-width: 768px) {
-
+@include tablet {
   .order {
     flex-direction: row;
     align-items: start;
@@ -63,7 +62,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@include desktop {
   .order {
     flex-wrap: nowrap;
   }

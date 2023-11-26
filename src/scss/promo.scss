@@ -6,12 +6,12 @@
 }
 
 .promo__heading {
-  grid-column: 1 / span 2; ;
+  grid-column: 1 / span 2; 
   margin: 0;
   margin-bottom: 70px;
   font-size: 45px;
   color: var(--brown);
-  line-height: 1.222;
+  line-height: 1.2;
 
   span {
     color: var(--orange);
@@ -83,7 +83,7 @@
   margin: auto;
 }
 
-@media (min-width: 768px) {
+@include tablet {
   .promo {
     flex-direction: row;
   }
@@ -95,7 +95,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@include desktop {
   .promo {
     flex-wrap: nowrap;
   }
